@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\content_main.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "com.example.share2need.app-mergeDebugResources-52:/layout/activity_user_list.xml",
+        "source": "com.example.share2need.app-main-55:/layout/activity_user_list.xml"
+    },
+    {
+        "merged": "com.example.share2need.app-mergeDebugResources-52:/layout/activity_chat_list.xml",
+        "source": "com.example.share2need.app-main-55:/layout/activity_chat_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\activity_chat_detail.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\activity_chat_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\activity_chat_list.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\activity_chat_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\received_items.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\received_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\item_message.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\item_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.share2need.app-mergeDebugResources-52:/layout/item_user.xml",
+        "source": "com.example.share2need.app-main-55:/layout/item_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\item_chat.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\item_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-mergeDebugResources-52:\\layout\\rate_product.xml",
+        "source": "C:\\Users\\hoang\\.gradle\\daemon\\8.11.1\\com.example.share2need.app-main-55:\\layout\\rate_product.xml"
+    }
+]

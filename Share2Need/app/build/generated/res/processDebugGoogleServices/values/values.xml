@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://ampg23-share2need-f38fd-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">228594099338</string>
+    <string name="google_api_key" translatable="false">AIzaSyCeemdB_1Q8wrs4nFZ5LThkGLKwRxA-9cQ</string>
+    <string name="google_app_id" translatable="false">1:228594099338:android:cfb86de2140de3b05c3973</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCeemdB_1Q8wrs4nFZ5LThkGLKwRxA-9cQ</string>
+    <string name="google_storage_bucket" translatable="false">ampg23-share2need-f38fd.firebasestorage.app</string>
+    <string name="project_id" translatable="false">ampg23-share2need-f38fd</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Quay lại"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sản phẩm đã nhận"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Sản phẩm 1 -->
+    <LinearLayout
+        android:id="@+id/product_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/product_1_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"/>
+
+        <TextView
+            android:id="@+id/product_1_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Áo thun nam cao cấp"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Sản phẩm 2 -->
+    <LinearLayout
+        android:id="@+id/product_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/product_2_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"/>
+
+        <TextView
+            android:id="@+id/product_2_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quần jeans nữ thời trang"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

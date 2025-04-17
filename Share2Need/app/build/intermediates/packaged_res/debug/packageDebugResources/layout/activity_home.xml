@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- ScrollView chứa nội dung chính -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 🔍 Thanh tìm kiếm -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/search_bar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:hint="Tìm kiếm trên Share2need"
+                    android:background="@android:drawable/edit_text"
+                    android:padding="8dp"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"/>
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:contentDescription="Search"/>
+            </LinearLayout>
+
+            <!-- 📍 Vị trí -->
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chọn vị trí của bạn"
+                android:padding="10dp"
+                android:textColor="#888888" />
+
+            <!-- 🍎 Danh mục -->
+            <HorizontalScrollView
+                android:id="@+id/categories_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Danh mục giả -->
+                    <ImageView
+                        android:id="@+id/category_1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@android:drawable/ic_menu_gallery"
+                        android:layout_margin="8dp"/>
+                    <ImageView
+                        android:id="@+id/category_2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@android:drawable/ic_menu_gallery"
+                        android:layout_margin="8dp"/>
+                    <ImageView
+                        android:id="@+id/category_3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@android:drawable/ic_menu_gallery"
+                        android:layout_margin="8dp"/>
+                    <ImageView
+                        android:id="@+id/category_4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@android:drawable/ic_menu_gallery"
+                        android:layout_margin="8dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- 📦 Các sản phẩm được đề xuất -->
+            <TextView
+                android:id="@+id/recommended_products_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Các sản phẩm được đề xuất"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+
+            <!-- Hai sản phẩm ngang -->
+            <LinearLayout
+                android:id="@+id/recommended_products_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/product_1_container"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#EEEEEE"
+                    android:padding="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:id="@+id/product_1_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="Hình ảnh"
+                        android:gravity="center"
+                        android:background="#CCCCCC"/>
+                    <TextView
+                        android:id="@+id/product_1_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên sản phẩm"/>
+                    <TextView
+                        android:id="@+id/product_1_poster"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên người đăng bài"/>
+                    <TextView
+                        android:id="@+id/product_1_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Khoảng cách - Trạng thái"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/product_2_container"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#EEEEEE"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/product_2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="Hình ảnh"
+                        android:gravity="center"
+                        android:background="#CCCCCC"/>
+                    <TextView
+                        android:id="@+id/product_2_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên sản phẩm"/>
+                    <TextView
+                        android:id="@+id/product_2_poster"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên người đăng bài"/>
+                    <TextView
+                        android:id="@+id/product_2_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Khoảng cách - Trạng thái"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 🆕 Các bài đăng mới nhất -->
+            <TextView
+                android:id="@+id/latest_posts_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Các bài đăng mới nhất"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+
+            <!-- 📈 Người dùng đánh giá cao -->
+            <TextView
+                android:id="@+id/top_rated_users_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Những người đăng bài có đánh giá cao"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+
+            <HorizontalScrollView
+                android:id="@+id/top_rated_users_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/top_rated_users_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/user_1_container"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#DDDDDD"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/user_1_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tên người dùng"/>
+                        <TextView
+                            android:id="@+id/user_1_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="★★★★★"/>
+                        <TextView
+                            android:id="@+id/user_1_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mô tả ngắn gọn của người dùng"/>
+                    </LinearLayout>
+
+                    <!-- Thêm người dùng thứ 2 -->
+                    <LinearLayout
+                        android:id="@+id/user_2_container"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#DDDDDD"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/user_2_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tên người dùng"/>
+                        <TextView
+                            android:id="@+id/user_2_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="★★★★★"/>
+                        <TextView
+                            android:id="@+id/user_2_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mô tả ngắn gọn của người dùng"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Khoảng trống để tránh thanh điều hướng che nội dung -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 📱 Thanh điều hướng dưới -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#EEEEEE"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Trang chủ"
+            android:background="#A5D6A7"/>
+        <TextView
+            android:id="@+id/nav_manage_posts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="QL bài đăng"/>
+        <TextView
+            android:id="@+id/nav_post"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Đăng bài"/>
+        <TextView
+            android:id="@+id/nav_messages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tin nhắn"/>
+        <TextView
+            android:id="@+id/nav_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tài khoản"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Thanh tiêu đề với nút trở lại và nút tạo trò chuyện mới -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <!-- Nút trở lại -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Danh sách trò chuyện"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp" />
+
+        <!-- Nút tạo trò chuyện mới -->
+        <ImageButton
+            android:id="@+id/new_chat_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:contentDescription="New Chat"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Thanh tìm kiếm -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search here..."
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Danh sách cuộc trò chuyện -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
